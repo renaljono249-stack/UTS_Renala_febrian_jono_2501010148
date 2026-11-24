@@ -1,0 +1,10 @@
+{
+    "jumlah_baris": 1,
+    "jumlah_kolom": 14,
+    "duplikasi_baris": 0,
+    "duplikasi_place_id": 0,
+    "jumlah_nilai_kosong": 1,
+    "metode_penggabungan": "Inner Join",
+    "kolom_penghubung": "Nama tempat wisata yang cocok secara persis",
+    "status": "Berhasil dengan cakupan kecocokan terbatas"
+}
