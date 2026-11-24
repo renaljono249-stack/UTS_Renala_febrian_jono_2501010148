@@ -1,0 +1,14 @@
+{
+    "nama_dataset": "Hasil Penggabungan Data Pariwisata Yogyakarta",
+    "sumber_data": [
+        "Kaggle - Dataset Pariwisata Yogyakarta",
+        "Visiting Jogja"
+    ],
+    "metode": "Inner Join",
+    "kolom_penghubung": "nama_normal",
+    "jumlah_baris": 1,
+    "jumlah_kolom": 14,
+    "file_hasil": "hasil_merge_pariwisata_yogyakarta.csv",
+    "md5": "47d52c71eec49cec693671d6c9eb50f2",
+    "catatan": "Satu pasangan nama tempat wisata cocok secara persis."
+}

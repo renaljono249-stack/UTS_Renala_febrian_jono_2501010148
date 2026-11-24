@@ -1,0 +1,22 @@
+{
+    "nama_dataset": "Data Cuaca Yogyakarta",
+    "sumber": "Open-Meteo",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=-7.8014&longitude=110.3647&hourly=temperature_2m&hourly=rain&hourly=wind_speed_10m&hourly=weather_code&start_date=2026-08-25&end_date=2026-09-30&timezone=Asia%2FJakarta",
+    "endpoint": "https://api.open-meteo.com/v1/forecast",
+    "metode": "GET",
+    "tanggal_akses": "2026-11-24",
+    "lokasi": "Kota Yogyakarta, Indonesia",
+    "latitude": -7.8014,
+    "longitude": 110.3647,
+    "periode": "2026-08-25 sampai 2026-09-30",
+    "variabel": [
+        "temperature_2m",
+        "rain",
+        "wind_speed_10m",
+        "weather_code"
+    ],
+    "status_http": 200,
+    "file_raw": "openmeteo_yogyakarta_raw.json",
+    "md5_raw": "e03ce33db07396b182e20d83e1f6f6c2",
+    "file_csv": "openmeteo_yogyakarta.csv"
+}
