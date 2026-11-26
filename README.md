@@ -131,7 +131,6 @@ Proyek ini memperhatikan beberapa aspek etika dan provenance data, yaitu:
 ```text
 UTS_Renala_febrian_jono_2501010148/
 │
-├── README.md
 │
 ├── data/
 │   │
@@ -171,6 +170,7 @@ UTS_Renala_febrian_jono_2501010148/
 │       ├── validasi_merge.json
 │       └── visitingjogja_yogyakarta.csv
 │
+├── README.md
 └── uts_dam.ipynb
 ```
 
