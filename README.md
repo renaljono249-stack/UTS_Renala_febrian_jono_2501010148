@@ -174,16 +174,6 @@ UTS_Renala_febrian_jono_2501010148/
 └── uts_dam.ipynb
 ```
 
-### Keterangan Folder
-
-- **README.md:** Berisi identitas mahasiswa, deskripsi proyek, sumber data, tujuan, dan dokumentasi proyek.
-- **data/raw/Api:** Menyimpan data mentah hasil pengambilan API Open-Meteo dalam format JSON.
-- **data/raw/download:** Menyimpan dataset asli yang diunduh dari Kaggle.
-- **data/raw/scraping:** Menyimpan halaman HTML mentah hasil web scraping Visiting Jogja.
-- **data/processed:** Menyimpan data yang telah dibersihkan, dinormalisasi, divalidasi, dan digabungkan.
-- **uts_dam.ipynb:** Berisi kode Python dan tahapan pengerjaan proyek menggunakan Google Colab.
-
-Struktur folder dibuat untuk memisahkan data mentah (raw) dan data hasil pengolahan (processed), sehingga proses akuisisi dan pengelolaan data menjadi lebih terorganisasi.
 
 ## 8. Tools yang Digunakan
 
