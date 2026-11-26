@@ -25,7 +25,7 @@ Data diperoleh melalui tiga metode, yaitu:
 
 ### A. Open Dataset – Kaggle
 
-**Nama dataset:** Dataset Pariwisata Yogyakarta
+**Nama Dataset:** Dataset Pariwisata Yogyakarta
 
 **URL:** https://www.kaggle.com/datasets/saufan/dataset-pariwisata-yogyakarta
 
@@ -56,7 +56,7 @@ File:
 
 **Halaman Scraping:** https://visitingjogja.jogjaprov.go.id/wisata-jogja/
 
-**Jumlah data hasil scraping:** 107 data unik.
+**Jumlah Data Hasil Scraping:** 107 data unik.
 
 ## 4. Proses Pengolahan Data
 
@@ -96,6 +96,21 @@ File:
 - Memeriksa duplikasi dan nilai kosong.
 - Menyimpan hasil merge dan metadata.
 
+## 5. Hasil Penggabungan Data
+
+**File Hasil:** `hasil_merge_pariwisata_yogyakarta.csv`
+
+Hasil penggabungan:
+
+| Keterangan | Hasil |
+|---|---|
+| Jumlah baris | 1 |
+| Jumlah kolom | 14 |
+| Tempat wisata yang cocok | Gembira Loka Zoo |
+| Duplikasi baris | 0 |
+| Duplikasi Place_Id | 0 |
+
+Penggabungan hanya menghasilkan satu baris karena hanya satu pasangan nama tempat wisata yang cocok secara persis.
 
 ## 6. Etika dan Provenance Data
 
@@ -113,11 +128,15 @@ Proyek ini memperhatikan beberapa aspek etika dan provenance data, yaitu:
 
 ## 7. Struktur Folder Proyek
 
+```text
 UTS_Renala_febrian_jono_2501010148/
+│
+├── README.md
 │
 ├── data/
 │   │
 │   ├── raw/
+│   │   │
 │   │   ├── Api/
 │   │   │   └── openmeteo_yogyakarta_raw.json
 │   │   │
@@ -127,18 +146,16 @@ UTS_Renala_febrian_jono_2501010148/
 │   │   │   └── user.csv
 │   │   │
 │   │   └── scraping/
-│   │       ├── scraping/
-│   │            ├── halaman_1.html
-│   │            ├── halaman_2.html
-│   │            ├── halaman_3.html
-│   │           ├── halaman_4.html
-│   │            ├── halaman_5.html
-│   │            ├── halaman_6.html
-│   │            ├── halaman_7.html
-│   │            ├── halaman_8.html
-│   │            ├── halaman_9.html
-│   │            └── halaman_10.htm
-│   │
+│   │       ├── halaman_1.html
+│   │       ├── halaman_2.html
+│   │       ├── halaman_3.html
+│   │       ├── halaman_4.html
+│   │       ├── halaman_5.html
+│   │       ├── halaman_6.html
+│   │       ├── halaman_7.html
+│   │       ├── halaman_8.html
+│   │       ├── halaman_9.html
+│   │       └── halaman_10.html
 │   │
 │   └── processed/
 │       ├── data_ethics_checklist.csv
@@ -154,8 +171,32 @@ UTS_Renala_febrian_jono_2501010148/
 │       ├── validasi_merge.json
 │       └── visitingjogja_yogyakarta.csv
 │
-└── README.md
 └── uts_dam.ipynb
 ```
 
+### Keterangan Folder
 
+- **README.md:** Berisi identitas mahasiswa, deskripsi proyek, sumber data, tujuan, dan dokumentasi proyek.
+- **data/raw/Api:** Menyimpan data mentah hasil pengambilan API Open-Meteo dalam format JSON.
+- **data/raw/download:** Menyimpan dataset asli yang diunduh dari Kaggle.
+- **data/raw/scraping:** Menyimpan halaman HTML mentah hasil web scraping Visiting Jogja.
+- **data/processed:** Menyimpan data yang telah dibersihkan, dinormalisasi, divalidasi, dan digabungkan.
+- **uts_dam.ipynb:** Berisi kode Python dan tahapan pengerjaan proyek menggunakan Google Colab.
+
+Struktur folder dibuat untuk memisahkan data mentah (raw) dan data hasil pengolahan (processed), sehingga proses akuisisi dan pengelolaan data menjadi lebih terorganisasi.
+
+## 8. Tools yang Digunakan
+
+- Google Colab
+- Python
+- Pandas
+- Requests
+- BeautifulSoup
+- Open-Meteo API
+- GitHub
+
+## 9. Kesimpulan
+
+Proyek ini menerapkan tiga metode akuisisi data, yaitu open dataset, API, dan web scraping untuk memperoleh data pariwisata Yogyakarta.
+
+Data kemudian diperiksa, dibersihkan, didokumentasikan, dan sebagian digabungkan untuk menghasilkan dataset yang dapat digunakan dalam analisis lebih lanjut.
