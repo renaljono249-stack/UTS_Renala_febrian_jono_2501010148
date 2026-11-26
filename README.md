@@ -96,21 +96,6 @@ File:
 - Memeriksa duplikasi dan nilai kosong.
 - Menyimpan hasil merge dan metadata.
 
-## 5. Hasil Penggabungan Data
-
-**File hasil:** `hasil_merge_pariwisata_yogyakarta.csv`
-
-Hasil penggabungan:
-
-| Keterangan | Hasil |
-|---|---:|
-| Jumlah baris | 1 |
-| Jumlah kolom | 14 |
-| Tempat wisata yang cocok | Gembira Loka Zoo |
-| Duplikasi baris | 0 |
-| Duplikasi Place_Id | 0 |
-
-Penggabungan hanya menghasilkan satu baris karena hanya satu pasangan nama tempat wisata yang cocok secara persis.
 
 ## 6. Etika dan Provenance Data
 
@@ -135,9 +120,3 @@ Proyek ini memperhatikan beberapa aspek etika dan provenance data, yaitu:
 - BeautifulSoup
 - Open-Meteo API
 - GitHub
-
-## 8. Kesimpulan
-
-Proyek ini menerapkan tiga metode akuisisi data, yaitu open dataset, API, dan web scraping untuk memperoleh data pariwisata Yogyakarta.
-
-Data kemudian diperiksa, dibersihkan, didokumentasikan, dan sebagian digabungkan untuk menghasilkan dataset yang dapat digunakan dalam analisis lebih lanjut.
