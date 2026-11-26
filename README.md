@@ -111,12 +111,40 @@ Proyek ini memperhatikan beberapa aspek etika dan provenance data, yaitu:
 
 **Catatan:** Status lisensi dataset Kaggle masih perlu diverifikasi sebelum penggunaan ulang atau distribusi dataset.
 
-## 7. Tools yang Digunakan
+## 7. Struktur Folder Proyek
 
-- Google Colab
-- Python
-- Pandas
-- Requests
-- BeautifulSoup
-- Open-Meteo API
-- GitHub
+UTS_Renala_febrian_jono_2501010148/
+│
+├── data/
+│   │
+│   ├── raw/
+│   │   ├── Api/
+│   │   │   └── openmeteo_yogyakarta_raw.json
+│   │   │
+│   │   ├── download/
+│   │   │   ├── tour.csv
+│   │   │   ├── tour_rating.csv
+│   │   │   └── user.csv
+│   │   │
+│   │   └── scraping/
+│   │       └── Data mentah hasil scraping
+│   │
+│   └── processed/
+│       ├── data_ethics_checklist.csv
+│       ├── hasil_merge_pariwisata_yogyakarta.csv
+│       ├── hasil_normalisasi_api.csv
+│       ├── metadata_merge.json
+│       ├── openmeteo_yogyakarta.csv
+│       ├── provenance_api.json
+│       ├── provenance_scraping.json
+│       ├── tour_clean.csv
+│       ├── tour_rating_clean.csv
+│       ├── user_clean.csv
+│       ├── validasi_merge.json
+│       └── visitingjogja_yogyakarta.csv
+│
+└── README.md
+└── uts_dam.ipynb
+```
+
+
