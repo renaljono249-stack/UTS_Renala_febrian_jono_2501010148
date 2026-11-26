@@ -1,0 +1,10 @@
+No.,Pemeriksaan,Status,Bukti/Keterangan
+1,Sumber data dicantumkan,Ya,Link Kaggle dicantumkan
+2,Lisensi diperiksa,Menunggu,Memeriksa bagian License Kaggle
+3,Penggunaan data sesuai ketentuan,Menunggu,Mengikuti lisensi pemilik dataset
+4,Tidak mengambil data terlarang,Ya,Menggunakan file dataset yang tersedia
+5,Data pribadi diperhatikan,Ya,"Memeriksa kolom User_Id, Location, Age"
+6,Privasi pengguna dilindungi,Ya,Tidak mempublikasikan data individual
+7,Data mentah dipertahankan,Ya,File asli disimpan di data/raw
+8,Pembersihan data didokumentasikan,Ya,Proses pembersihan dicatat di notebook
+9,Hasil analisis disajikan secara bertanggung jawab,Ya,Menghindari kesimpulan yang menyesatkan

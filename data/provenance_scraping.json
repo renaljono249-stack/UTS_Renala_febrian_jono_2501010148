@@ -1,0 +1,14 @@
+{
+    "nama_dataset": "Data Wisata Yogyakarta",
+    "sumber": "Visiting Jogja",
+    "url_utama": "https://visitingjogja.jogjaprov.go.id/wisata-jogja/",
+    "halaman_diambil": 10,
+    "jumlah_data_valid": 107,
+    "tanggal_akses": "2026-11-25 02:08:13",
+    "metode": "Web scraping menggunakan Requests dan BeautifulSoup",
+    "file_hasil": "visitingjogja_yogyakarta.csv",
+    "ukuran_file_byte": 16087,
+    "md5": "8b1d8adadfe9a82db52093487b40a473",
+    "robots_txt": "https://visitingjogja.jogjaprov.go.id/robots.txt",
+    "lisensi_dan_ketentuan": "Perlu diperiksa pada ketentuan resmi situs"
+}
