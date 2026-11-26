@@ -127,7 +127,18 @@ UTS_Renala_febrian_jono_2501010148/
 │   │   │   └── user.csv
 │   │   │
 │   │   └── scraping/
-│   │       └── Data mentah hasil scraping
+│   │       ├── scraping/
+│   │            ├── halaman_1.html
+│   │            ├── halaman_2.html
+│   │            ├── halaman_3.html
+│   │           ├── halaman_4.html
+│   │            ├── halaman_5.html
+│   │            ├── halaman_6.html
+│   │            ├── halaman_7.html
+│   │            ├── halaman_8.html
+│   │            ├── halaman_9.html
+│   │            └── halaman_10.htm
+│   │
 │   │
 │   └── processed/
 │       ├── data_ethics_checklist.csv
