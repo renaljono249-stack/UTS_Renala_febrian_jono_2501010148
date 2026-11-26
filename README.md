@@ -1,7 +1,7 @@
-# UTS DATA ACQUISITION & MANAGEMENT
-## Pariwisata Yogyakarta
+# Pariwisata Yogyakarta
 
-### 1. Identitas Mahasiswa
+## 1. Identitas Mahasiswa
+
 - **Nama:** Renala Febrian Jono
 - **NIM:** 2501010148
 - **Program Studi:** Informatika
@@ -11,54 +11,57 @@
 - **Tahun Akademik:** 2026/2027
 - **Topik Proyek:** Pariwisata Yogyakarta
 
-### 2. Deskripsi Proyek
+## 2. Deskripsi Proyek
+
 Proyek ini bertujuan untuk melakukan pengumpulan, pemeriksaan, pembersihan, pengolahan, dan penggabungan data yang berkaitan dengan pariwisata di Yogyakarta.
 
 Data diperoleh melalui tiga metode, yaitu:
+
 1. Open Dataset dari Kaggle.
 2. API Open-Meteo.
 3. Web Scraping dari website Visiting Jogja.
 
-### 3. Sumber Data
+## 3. Sumber Data
 
-**A. Open Dataset – Kaggle**
+### A. Open Dataset – Kaggle
 
-Nama dataset: Dataset Pariwisata Yogyakarta.
+**Nama dataset:** Dataset Pariwisata Yogyakarta
 
-URL: https://www.kaggle.com/datasets/saufan/dataset-pariwisata-yogyakarta
+**URL:** https://www.kaggle.com/datasets/saufan/dataset-pariwisata-yogyakarta
 
 File:
-- tour.csv
-- tour_rating.csv
-- user.csv
+- `tour.csv`
+- `tour_rating.csv`
+- `user.csv`
 
-**B. API – Open-Meteo**
+### B. API – Open-Meteo
 
-URL: https://api.open-meteo.com/v1/forecast
+**URL:** https://api.open-meteo.com/v1/forecast
 
-Lokasi: Yogyakarta.
+**Lokasi:** Yogyakarta
 
-Koordinat:
+**Koordinat:**
 - Latitude: -7.8014
 - Longitude: 110.3647
 
-Variabel:
+**Variabel:**
 - Temperature
 - Rain
 - Wind Speed
 - Weather Code
 
-**C. Web Scraping – Visiting Jogja**
+### C. Web Scraping – Visiting Jogja
 
-Website: https://visitingjogja.jogjaprov.go.id/
+**Website:** https://visitingjogja.jogjaprov.go.id/
 
-Halaman scraping: https://visitingjogja.jogjaprov.go.id/wisata-jogja/
+**Halaman Scraping:** https://visitingjogja.jogjaprov.go.id/wisata-jogja/
 
-Jumlah data hasil scraping: 107 data unik.
+**Jumlah data hasil scraping:** 107 data unik.
 
-### 4. Proses Pengolahan Data
+## 4. Proses Pengolahan Data
 
-**A. Open Dataset**
+### A. Open Dataset
+
 - Membaca file CSV.
 - Memeriksa jumlah baris dan kolom.
 - Memeriksa tipe data dan nilai kosong.
@@ -66,7 +69,8 @@ Jumlah data hasil scraping: 107 data unik.
 - Melakukan pembersihan data.
 - Menyimpan data hasil pembersihan.
 
-**B. API**
+### B. API
+
 - Mengakses API Open-Meteo.
 - Memeriksa status HTTP.
 - Menggunakan timeout dan mekanisme retry.
@@ -74,7 +78,8 @@ Jumlah data hasil scraping: 107 data unik.
 - Mengubah JSON menjadi tabel CSV.
 - Menyimpan data mentah dan provenance.
 
-**C. Web Scraping**
+### C. Web Scraping
+
 - Memeriksa robots.txt.
 - Mengakses halaman Visiting Jogja.
 - Menggunakan Requests dan BeautifulSoup.
@@ -83,27 +88,34 @@ Jumlah data hasil scraping: 107 data unik.
 - Menghapus data duplikat.
 - Menghasilkan 107 data unik.
 
-**D. Penggabungan Data**
+### D. Penggabungan Data
+
 - Menggabungkan dataset Kaggle dan hasil scraping.
 - Menggunakan metode Inner Join.
 - Menggunakan nama tempat wisata sebagai kunci penghubung.
 - Memeriksa duplikasi dan nilai kosong.
 - Menyimpan hasil merge dan metadata.
 
-### 5. Hasil Penggabungan Data
-File hasil: `hasil_merge_pariwisata_yogyakarta.csv`
+## 5. Hasil Penggabungan Data
+
+**File hasil:** `hasil_merge_pariwisata_yogyakarta.csv`
 
 Hasil penggabungan:
-- Jumlah baris: 1
-- Jumlah kolom: 14
-- Tempat wisata yang cocok: Gembira Loka Zoo
-- Duplikasi baris: 0
-- Duplikasi Place_Id: 0
+
+| Keterangan | Hasil |
+|---|---:|
+| Jumlah baris | 1 |
+| Jumlah kolom | 14 |
+| Tempat wisata yang cocok | Gembira Loka Zoo |
+| Duplikasi baris | 0 |
+| Duplikasi Place_Id | 0 |
 
 Penggabungan hanya menghasilkan satu baris karena hanya satu pasangan nama tempat wisata yang cocok secara persis.
 
-### 6. Etika dan Provenance Data
-Proyek ini memperhatikan:
+## 6. Etika dan Provenance Data
+
+Proyek ini memperhatikan beberapa aspek etika dan provenance data, yaitu:
+
 - Pencantuman sumber data.
 - Pemeriksaan lisensi dan ketentuan penggunaan.
 - Perlindungan data pribadi.
@@ -112,9 +124,10 @@ Proyek ini memperhatikan:
 - Pencatatan URL dan tanggal akses.
 - Pemeriksaan checksum MD5.
 
-Status lisensi dataset Kaggle masih perlu diverifikasi sebelum penggunaan ulang atau distribusi dataset.
+**Catatan:** Status lisensi dataset Kaggle masih perlu diverifikasi sebelum penggunaan ulang atau distribusi dataset.
 
-### 7. Tools yang Digunakan
+## 7. Tools yang Digunakan
+
 - Google Colab
 - Python
 - Pandas
@@ -123,9 +136,8 @@ Status lisensi dataset Kaggle masih perlu diverifikasi sebelum penggunaan ulang 
 - Open-Meteo API
 - GitHub
 
-### 8. Kesimpulan
+## 8. Kesimpulan
+
 Proyek ini menerapkan tiga metode akuisisi data, yaitu open dataset, API, dan web scraping untuk memperoleh data pariwisata Yogyakarta.
 
 Data kemudian diperiksa, dibersihkan, didokumentasikan, dan sebagian digabungkan untuk menghasilkan dataset yang dapat digunakan dalam analisis lebih lanjut.
-
----
